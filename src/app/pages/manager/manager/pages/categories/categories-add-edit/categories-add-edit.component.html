@@ -1,0 +1,7 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div>
+    <label for="name">Category Name</label>
+  <input type="text" class="form-control" id="name" placeholder="Category Name" formControlName="name">
+  </div>
+ <button type="submit" class="btn btn-outline-success">Add</button>
+</form>
