@@ -1,4 +1,4 @@
-<div *ngIf="product" class="card" >
+<div *ngIf="product" class="card" [routerLink]="['/products', product.id]" >
   <div [ngStyle]="{
    'background-image': 'url(' + product.image + ')'
   }" class="card-image">
@@ -16,7 +16,7 @@
 
     <div>
       <button *appAuthPermissions type="button" class="btn btn-outline-primary me-2"
-      (click)="addToCart()">
+      (click)="addToCart($event)">
         Add to Cart
       </button>
     </div>

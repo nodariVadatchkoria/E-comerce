@@ -1,0 +1,23 @@
+<div class="d-flex">
+  <div class="flex-initial me-4">
+    <img [src]="product.image" width="900px">
+  </div>
+  <div class="flex-fill">
+    <h3>{{product.name}}</h3>
+    <p>{{product.description}}</p>
+    <p>{{product.price | currency}}</p>
+    <div>
+      <input type="number" [(ngModel)]="quantity" min="0" max="20" class="mr-3">
+      <button class="btn btn-outline-success" (click)="addToCart()">Add to cart</button>
+    </div>
+    <div>
+      <div *ngIf="message" class="alert alert-success message">
+        {{message}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="products">
+  <app-product-card *ngFor="let similarProduct of similarProducts" [product]="similarProduct"></app-product-card>
+</div>

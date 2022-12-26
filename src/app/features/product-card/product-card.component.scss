@@ -1,13 +1,15 @@
-.card{
-   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(250, 247, 247);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
-    padding: 20px;
-    height: 100%;
-  .card-image{
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(250, 247, 247);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  padding: 20px;
+  height: 100%;
+  cursor: pointer;
+
+  .card-image {
     //background-image: url(../../../assets/images/cardimage.jpeg);
     width: 100%;
     height: 300px;
