@@ -1,0 +1,25 @@
+.logo{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+:host{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.form-floating{
+  margin-bottom: 10px;
+  label{
+    color: #adacac;
+  }
+}
+form{
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  .form-select{
+    padding: 0 10px;
+  }
+}

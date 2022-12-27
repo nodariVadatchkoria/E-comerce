@@ -7,42 +7,15 @@ header {
   background-color: #faf8f8;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
 
+
   .logo {
     display: flex;
     align-items: center;
-
     height: 90px;
     margin-right: 10px;
+    mouse: pointer;
+    cursor: pointer;
   }
-
-  .counter {
-    display: flex;
-    height: 45px;
-
-    //border: 1px solid #e0e0e0;
-    //border-radius: 50%;
-    background-color: rgb(112, 246, 14);
-    color: #0633e7;
-    font-size: 30px;
-    font-weight: 600;
-    //box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-    text-decoration: none;
-    position: relative;
-    border: 1px solid #fa0606;
-    z-index: 1;
-    margin: auto auto;
-
-    .cart-icon {
-      height: 45px;
-      background-color: #fa0606;
-      border: 1px solid #de0a0a;
-      position: relative;
-      margin: auto auto;
-
-    }
-  }
-
-
 }
 
 div.relative {
@@ -52,20 +25,22 @@ div.relative {
   align-items: center;
   justify-content: center;
   padding-top: 14px;
-
+  cursor: pointer;
 }
+
 div.absolute {
   position: absolute;
   width: 80px;
   height: 80px;
-
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   right: calc(50% - 43px);
   top: calc(50% - 51px);
+
 }
+
 .icon {
   width: 45px;
   height: 45px;
@@ -74,4 +49,19 @@ div.absolute {
   align-items: center;
   justify-content: center;
   margin: auto auto;
+  cursor: pointer;
+}
+.user-mail{
+  background-color: #faf8f8;
+  color: #000000;
+}
+.navbar{
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  margin-top: 10px;
+
 }

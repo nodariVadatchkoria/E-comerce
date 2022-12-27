@@ -31,15 +31,20 @@
             <img src="https://github.com/mdo.png" alt="mdo" width="42" height="42" class="rounded-circle">
           </a>
 
-          <ul class="dropdown-menu text-small">
-            <li><a class="dropdown-item" routerLink="/manager">Content Manager</a></li>
-            <li><a class="dropdown-item" routerLink="/orders">Orders</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" (click)="logout()">Sign out</a></li>
-          </ul>
+          <div class="navbar">
+            <div class="user-mail">
+              {{user?.email}}
+            </div>
+            <ul class="dropdown-menu menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" routerLink="/manager">Content Manager</a></li>
+              <li><a class="dropdown-item" routerLink="/orders">Orders</a></li>
+              <li><a class="dropdown-item" routerLink="/profile">Profile</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" (click)="logout()">Sign out</a></li>
+            </ul>
+          </div>
         </div>
       </ng-container>
       <ng-template #notAuthenticated>

@@ -34,6 +34,10 @@ const routes: Routes = [
         path: 'manager',
         canActivate: [AuthGuard],
         loadChildren: () => import('./pages/manager/manager/manager.module').then(m => m.ManagerModule)
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfileModule)
       }
     ]
   }
